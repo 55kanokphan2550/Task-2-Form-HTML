@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบลงทะเบียนนักศึกษาใหม่</title>
+</head>
+<body>
+
+    <header>
+        <h1>ระบบลงทะเบียนนักศึกษาใหม่</h1>
+        <p>กรุณากรอกข้อมูลให้ครบถ้วนและถูกต้อง เพื่อใช้ในการลงทะเบียนเข้าศึกษา</p>
+    </header>
+
+    <main>
+        <form>
+
+            <fieldset>
+                <legend>ข้อมูลการเข้าสู่ระบบ</legend>
+
+                <p>
+                    <label for="username">ชื่อผู้ใช้ (Username):</label>
+                    <input type="text" id="username" name="username" required>
+                </p>
+
+                <p>
+                    <label for="password">รหัสผ่าน (Password):</label>
+                    <input type="password" id="password" name="password" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>ข้อมูลส่วนตัว</legend>
+
+                <p>
+                    <label for="fullname">ชื่อ-นามสกุล:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="เช่น นายกนกพันธุ์ บุญรัตน์ ">
+                </p>
+
+                <p>
+                    <label for="email">อีเมล:</label>
+                    <input type="email" id="email" name="email">
+                </p>
+
+                <p>
+                    <label for="birthdate">วัน/เดือน/ปีเกิด:</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </p>
+
+                <p>
+                    เพศ:
+                    <input type="radio" id="gender-male" name="gender" value="male">
+                    <label for="gender-male">ชาย</label>
+
+                    <input type="radio" id="gender-female" name="gender" value="female">
+                    <label for="gender-female">หญิง</label>
+
+                    <input type="radio" id="gender-other" name="gender" value="other">
+                    <label for="gender-other">อื่นๆ</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>ข้อมูลการศึกษา</legend>
+
+                <p>
+                    <label for="level">ระดับชั้น:</label>
+                    <select id="level" name="level">
+                        <option value="vocc1">ปวช.1</option>
+                        <option value="vocc2">ปวช.2</option>
+                        <option value="vocc3">ปวช.3</option>
+                        <option value="vochc1">ปวส.1</option>
+                        <option value="vochc2">ปวส.2</option>
+                    </select>
+                </p>
+
+                <p>
+                    ความสนใจเพิ่มเติม:
+                    <input type="checkbox" id="interest-web" name="interest" value="web_design">
+                    <label for="interest-web">Web Design</label>
+
+                    <input type="checkbox" id="interest-db" name="interest" value="database">
+                    <label for="interest-db">Database</label>
+
+                    <input type="checkbox" id="interest-coding" name="interest" value="coding">
+                    <label for="interest-coding">Coding</label>
+                </p>
+
+                <p>
+                    <label for="address">ที่อยู่ปัจจุบัน:</label><br>
+                    <textarea id="address" name="address" rows="4" cols="50"></textarea>
+                </p>
+            </fieldset>
+
+            <!-- ปุ่มดำเนินการ -->
+            <p>
+                <button type="submit">ลงทะเบียน</button>
+                <button type="reset">ล้างข้อมูล</button>
+            </p>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>สงวนลิขสิทธิ์ 2026 แผนกวิชาเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคสุราษฎร์ธานี</p>
+    </footer>
+
+</body>
+</html>
